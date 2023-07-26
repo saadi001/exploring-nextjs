@@ -1,6 +1,7 @@
 import { Button } from 'antd';
 import Link from 'next/link';
 import React from 'react';
+import RootLayout from '../../components/layout/rootLayout';
 
 const AboutPage = () => {
     return (
@@ -14,3 +15,11 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
+AboutPage.getLayout = function getLayout(page){
+    return (
+        <RootLayout>
+            {page}
+        </RootLayout>
+    )
+}
