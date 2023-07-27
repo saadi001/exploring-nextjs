@@ -1,7 +1,6 @@
+import RootLayout from '@/components/layout/RootLayout';
 import { Button } from 'antd';
 import Link from 'next/link';
-import React from 'react';
-import RootLayout from '../../components/layout/rootLayout';
 
 const AboutPage = () => {
     return (
